@@ -9,7 +9,13 @@
     
     <meta name="author" content="yc">
     
-    <meta name="description" content="deploy测试，将_deploy.yml中关于deploy的内容改为：        deploy:          type: git          message: Site updated          repo:            github: git@github.com">
+    <meta name="description" content="deploy测试，将_deploy.yml中关于deploy的内容改为：    
+deploy:
+  type: git
+  message: Site updated
+  repo:
+    github: git@github.com:tcsthyc/hexoPB.git,gh-pages
+  ">
     
     
     
@@ -74,7 +80,7 @@
     </p>
   <p class="article-time">
     <time datetime="2015-02-03T01:57:38.000Z" itemprop="datePublished">2月 3 2015</time>
-    更新日期:<time datetime="2015-02-03T02:11:49.000Z" itemprop="dateModified">2月 3 2015</time>
+    更新日期:<time datetime="2015-02-03T02:12:43.000Z" itemprop="dateModified">2月 3 2015</time>
     
   </p>
 </header>
@@ -86,9 +92,16 @@
 		
 		</div>
 		
-		<p>deploy测试，将_deploy.yml中关于deploy的内容改为：<br>        deploy:<br>          type: git<br>          message: Site updated<br>          repo:<br>            github: git@github.com:tcsthyc/hexoPB.git,gh-pages</p>
-<pre><code>        <span class="id">#gitcafe</span>: &lt;<span class="tag">repository</span> <span class="tag">url</span>&gt;,<span class="attr_selector">[branch]</span>
-</code></pre><p>结果返回<br>    nothing to commit, working directory clean<br>仍需测试</p>
+		<p>deploy测试，将_deploy.yml中关于deploy的内容改为：    </p>
+<pre><code>deploy:
+  <span class="built_in">type</span>: git
+  message: Site updated
+  repo:
+    github: git@github.com:tcsthyc/hexoPB.git,gh-pages
+    <span class="comment">#gitcafe: &lt;repository url&gt;,[branch]</span>
+</code></pre><p>结果返回</p>
+<pre><code>nothing <span class="built_in">to</span> commit, working <span class="built_in">directory</span> clean
+</code></pre><p>仍需测试</p>
   
 	</div>
 		<footer class="article-footer clearfix">
